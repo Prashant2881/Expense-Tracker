@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .transaction-section {
+    width: 100%;
+    max-width: 70%;
+    margin-bottom: 20px;
+  }
+  
+  .graph-section {
+    width: 100%;
+    max-width: 30%;
+    text-align: center;
+  }
+  
+  .balance {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .balance h3 {
+    font-size: 18px;
+  }
+  
+  .balance p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .summary div {
+    text-align: center;
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 48%;
+  }
+  
+  .form {
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #transactionHistory {
+    list-style: none;
+  }
+  
+  #transactionHistory li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+  }
+  
+  #transactionHistory li.income {
+    border-left: 4px solid #28a745;
+  }
+  
+  #transactionHistory li.expense {
+    border-left: 4px solid #dc3545;
+  }
+  
+  #saveAsPDF {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .graph-section {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .transaction-section {
+      max-width: 100%;
+    }
+  
+    .graph-section {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Expense Tracker</h1>
+    <div class="main-content">
+      <!-- Left Section -->
+      <div class="transaction-section">
+        <div class="balance">
+          <h3>Balance</h3>
+          <p id="balance">₹0.00</p>
+        </div>
+        <div class="summary">
+          <div class="income">
+            <h3>Income</h3>
+            <p id="income">₹0.00</p>
+          </div>
+          <div class="expense">
+            <h3>Expense</h3>
+            <p id="expense">₹0.00</p>
+          </div>
+        </div>
+        <div class="form">
+          <h3>Add Transaction</h3>
+          <input type="text" id="description" placeholder="Enter description" />
+          <input type="number" id="amount" placeholder="Enter amount (+ for income, - for expense)" />
+          <button id="addTransaction">Add Transaction</button>
+        </div>
+        <h3>Transaction History</h3>
+        <ul id="transactionHistory"></ul>
+        <button id="saveAsPDF">Save as PDF</button>
+      </div>
+
+      <!-- Right Section -->
+      <div class="graph-section">
+        <h3>Expense vs Income</h3>
+        <canvas id="chart" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
